@@ -7,15 +7,15 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
-<!--    TEXTVIEW UNTUK MENAMPILKAN TEXT-->
-<!--    layout width = lebar
-        layout high = tinggi
-        id digunakan untuk memberikan id setiap content
-        margin untuk mengatur jarak antar view
-        padding untuk mempertebal view
-        background untuk memberikan sebuah latar belakang pada view
-        size untuk ukuran
-        gravity untuk mengatur letak dalam view -->
+    <!--    TEXTVIEW UNTUK MENAMPILKAN TEXT-->
+    <!--    layout width = lebar
+            layout high = tinggi
+            id digunakan untuk memberikan id setiap content
+            margin untuk mengatur jarak antar view
+            padding untuk mempertebal view
+            background untuk memberikan sebuah latar belakang pada view
+            size untuk ukuran
+            gravity untuk mengatur letak dalam view -->
 
 
     <TextView
@@ -39,8 +39,8 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/amcclogo" />
 
-<!--    LINEARLAYOUT DIGUNAKAN UNTUK MENGARAHKAN CONTENT
-        SECARA VERTICAL (KEBAWAH)-->
+    <!--    LINEARLAYOUT DIGUNAKAN UNTUK MENGARAHKAN CONTENT
+            SECARA VERTICAL (KEBAWAH)-->
     <LinearLayout
         android:gravity="center"
         android:layout_gravity="center"
@@ -57,12 +57,12 @@
             android:id="@+id/tv_textuser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UserName"
+            android:text="Username"
             android:textSize="18sp"
             android:textStyle="bold" />
 
-<!--        EDITTEXT DIGUNAKAN UNTUK MENAMPILKAN TEXT-->
-<!--        YANG DAPAT DIEDIT OLEH USER-->
+        <!--        EDITTEXT DIGUNAKAN UNTUK MENAMPILKAN TEXT-->
+        <!--        YANG DAPAT DIEDIT OLEH USER-->
 
         <EditText
             android:id="@+id/et_Inputusername"
@@ -74,22 +74,44 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:layout_marginTop="10dp"
-            android:hint="Input username" />
+            android:hint="Insert Username" />
 
-<!--     YUK BUAT UNTUK TEXTVIEW , EDIT TEXTNYA DAN BUTTON -->
-<!--        CARA NYA SAMA KAYAK DIATAS YA -->
+        <!--     YUK BUAT UNTUK TEXTVIEW , EDIT TEXTNYA DAN BUTTON -->
+        <!--        CARA NYA SAMA KAYAK DIATAS YA -->
 
-<!--        BERIKUR LANGKAHNYA..-->
+        <!--        BERIKUR LANGKAHNYA..-->
 
-<!--        1. GUNAKAN TEXT VIEW UNTUK MENAMPILKAN TEXT PASSWORD-->
+        <!--        1. GUNAKAN TEXT VIEW UNTUK MENAMPILKAN TEXT PASSWORD-->
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="5dp"/>
 
 
-<!--        2. GUNAKAN EDITTEXT UNTUK MENAMPILKAN TEXT YANG DAPAT DIEDIT OLEH USER-->
 
+        <!--        2. GUNAKAN EDITTEXT UNTUK MENAMPILKAN TEXT YANG DAPAT DIEDIT OLEH USER-->
+        <EditText
+            android:id="@+id/et_InputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_corners"
+            android:hint="Insert Password"
+            android:textColorHint="@color/white"
+            android:gravity="center"
+            android:inputType="text"/>
 
-<!--        3. GUNAKAN VIEW BUTTON UNTUK PINDAH ACTIVITY/HALAMAN -->
-
-
+        <!--        3. GUNAKAN VIEW BUTTON UNTUK PINDAH ACTIVITY/HALAMAN -->
+        <Button
+            android:layout_marginTop="22dp"
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:text="Login"
+            android:background="@drawable/ic_corners"/>
 
     </LinearLayout>
 
